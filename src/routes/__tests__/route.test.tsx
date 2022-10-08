@@ -7,10 +7,10 @@ import {
 } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
-import { routes } from "../../route";
+import { routes } from "../route";
 import { vi } from "vitest";
 
-vi.mock("../../../api/login", () => ({
+vi.mock("../../api/login", () => ({
   isLogged: true,
   logIn: () => {},
   logOut: () => {},

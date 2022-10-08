@@ -2,7 +2,6 @@ import React from "react";
 import { ActionFunctionArgs, Form, redirect } from "react-router-dom";
 
 export const action = async (e: ActionFunctionArgs) => {
-  console.log("action");
   const formData = await e.request.formData();
 
   const title = formData.get("title") as string;

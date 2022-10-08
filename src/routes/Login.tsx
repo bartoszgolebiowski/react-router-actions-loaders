@@ -15,12 +15,12 @@ export const loader = () => {
 };
 
 export const userLoader =
-  (customLodaer: (e: LoaderFunctionArgs) => Promise<any>) =>
+  (customLodaer?: (e: LoaderFunctionArgs) => Promise<any>) =>
   (e: LoaderFunctionArgs) => {
     if (!isLogged) {
       return redirect("/login");
     }
-    return customLodaer(e);
+    return customLodaer ? customLodaer(e) : (() => {})();
   };
 
 const Login = () => {

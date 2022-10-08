@@ -1,6 +1,7 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Outlet,
   Route,
 } from "react-router-dom";
 import App from "./App";
@@ -28,7 +29,8 @@ import ErrorElementRetry from "./ErrorElementRetry";
 
 export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
-    <Route path="post" loader={userLoader(postsLoader)} element={<Posts />}>
+    <Route path="post" loader={postsLoader} element={<Posts />}>
+      <Route index loader={userLoader()} element={<Outlet />} />
       <Route path="new" action={createPostAction} element={<PostCreate />} />
       <Route path=":postId" loader={postLoader} element={<PostDetails />}>
         <Route
