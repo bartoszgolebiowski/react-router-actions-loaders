@@ -8,7 +8,7 @@ import {
   redirect,
   useLoaderData,
 } from "react-router-dom";
-import ErrorElementRetry from "../ErrorElementRetry";
+import ErrorElementRetry from "../../components/ErrorElementRetry";
 
 type Comment = {
   id: number;

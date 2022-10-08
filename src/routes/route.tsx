@@ -25,7 +25,7 @@ import CommentEdit, {
   loader as deferCommentLoader,
   action as editCommentAction,
 } from "./comment/CommentEdit";
-import ErrorElementRetry from "./ErrorElementRetry";
+import ErrorElementRetry from "../components/ErrorElementRetry";
 
 export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>

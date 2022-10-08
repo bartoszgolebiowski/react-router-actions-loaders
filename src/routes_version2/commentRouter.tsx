@@ -1,15 +1,15 @@
 import React from "react";
-import Comments, { loader as commentsLoader } from "../comment/Comments";
+import Comments, { loader as commentsLoader } from "../routes/comment/Comments";
 import CommentDetails, {
   loader as commentLoader,
-} from "../comment/CommentDetails";
+} from "../routes/comment/CommentDetails";
 import CommentCreate, {
   action as createCommentAction,
-} from "../comment/CommentCreate";
+} from "../routes/comment/CommentCreate";
 import CommentEdit, {
   loader as deferCommentLoader,
   action as editCommentAction,
-} from "../comment/CommentEdit";
+} from "../routes/comment/CommentEdit";
 
 export const actionsDefault = {
   editCommentAction,

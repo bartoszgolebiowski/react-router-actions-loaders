@@ -1,8 +1,12 @@
 import React from "react";
-import Posts, { loader as postsLoader } from "../post/Posts";
-import PostDetails, { loader as postLoader } from "../post/PostDetails";
-import PostCreate, { action as createPostAction } from "../post/PostCreate";
-import PostEdit, { action as editPostAction } from "../post/PostEdit";
+import Posts, { loader as postsLoader } from "../../routes/post/Posts";
+import PostDetails, {
+  loader as postLoader,
+} from "../../routes/post/PostDetails";
+import PostCreate, {
+  action as createPostAction,
+} from "../../routes/post/PostCreate";
+import PostEdit, { action as editPostAction } from "../../routes/post/PostEdit";
 import commentRouter, {
   actionsDefault as commentActionsDefault,
   loadersDefault as commentLoadersDefault,

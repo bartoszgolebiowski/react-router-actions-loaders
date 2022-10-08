@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import Login, { action as loginAction, loader as loginLoader } from "../Login";
+import App from "../routes/App";
+import Login, {
+  action as loginAction,
+  loader as loginLoader,
+} from "../routes/Login";
 import postRouter from "./postRouter";
 
 export const routes = [
